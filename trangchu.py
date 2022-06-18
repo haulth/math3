@@ -35,6 +35,7 @@ def openNewWindow1():
 
     def tinh():
         data= text_box.get("1.0",END)
+        
         all1,macth,all2,a,b,c,lst_number,calc,az=main1(data)
         if lst_number==[]:
             label0=Label(root1,text="Chuỗi nhập vào không hợp lệ!",font=("Arial", 20), fg="red")
@@ -65,6 +66,8 @@ def openNewWindow1():
 
         
         def hidetinh():
+            
+          
             label0.grid_forget()
             label1.grid_forget()
             label2.grid_forget()
@@ -147,6 +150,7 @@ def openNewWindow2():
 
     def tinh():
         data= text_box.get("1.0",END)
+        
         calc1,calc2,a,b,c,az1,az2,az3=main2(data)
     
         label0=Label(root2,text="---------------------------------")
@@ -177,6 +181,7 @@ def openNewWindow2():
         label12.grid(row=15,column=0,padx=10)
         
         def hidetinh():
+            
             label0.grid_forget()
             label1.grid_forget()
             label2.grid_forget()

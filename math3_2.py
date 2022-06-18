@@ -119,6 +119,9 @@ math=[]
 
 def main2(data):
     #del / in string
+    math=[]
+    lst_num=[]
+    
     d=find_flask(data)
     #split string to list by comma and split list to list by dot
     list1 = split_comma_dot(d)
@@ -141,9 +144,9 @@ def main2(data):
         lst_num.remove(lst_num[1])
     else:
         if find_in_string_by_list(list_cd[1],mul_word1)==True:
-            math.append("*")      
+            math.append("*")         
         elif find_in_string_by_list(list_cd[1],div_word1)==True:
-            math.append("/")
+            math.append("/")           
         elif find_in_string_by_list(list_cd[1],sub_word1)==True:
             math.append("-")
         elif find_in_string_by_list(list_cd[1],add_word1)==True:

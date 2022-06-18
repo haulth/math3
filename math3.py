@@ -153,7 +153,8 @@ data4="Một thanh gỗ dài 12 cm, bố em cưa bớt đi 2 cm. Hỏi thanh g�
 
 
 def main1(data):
-
+    math=[]
+    lst_number=[]
     #tách từng câu vào list
     all= split_comma_dot(data)
     all1=all
